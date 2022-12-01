@@ -1,0 +1,20 @@
+{% extends "AppDesafio/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    Ingresar Categoria:
+    <br>
+        <form action="" method="post">{% csrf_token %}
+            <table>
+                {{categoriasForms.as_table}}
+            </table>
+            <input type="submit",value="Enviar">
+        </form>
+
+  
+
+{% endblock %}

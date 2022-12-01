@@ -1,0 +1,17 @@
+{% extends "AppDesafio/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Busqueda producto</h1>
+    <p>Escriba el producto a buscar</p>
+    <br>
+    <form action="/AppDesafio/busqueda/" method="get"> 
+        <input type="text" name="producto">
+            <input type="submit",value="Enviar">
+        </form>
+
+{% endblock %}
